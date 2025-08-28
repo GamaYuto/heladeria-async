@@ -11,19 +11,34 @@ export class Heladeria {
     this.iva = iva;
   }
 
+
+  private getPrecioBase = (tamano: Tamano): number => {
+    const precios = {
+      pequeno: 8,
+      mediano: 10,
+      grande: 12,
+    };
+    return precios[tamano];
+  };
+
   calcularPrecio = (base: number, toppings: string[] = []): number => {
     return base * (1 + this.iva) + toppings.length * 0.5;
   };
 
   crearPedido = (sabor: string, tamano: Tamano = 'mediano', toppings?: string[], notas: string = ''): Pedido => {
     this.ultimoId++;
-    const precio = this.calcularPrecio(10, toppings);
+
+    const precioBase = this.getPrecioBase(tamano);
+    
+    
+    const precioFinal = this.calcularPrecio(precioBase, toppings ?? []);
+
     const nuevoPedido: Pedido = {
       id: this.ultimoId,
       sabor,
       tamano,
       toppings,
-      precio,
+      precio: parseFloat(precioFinal.toFixed(2)),
       estado: 'pendiente',
       notas,
     };
