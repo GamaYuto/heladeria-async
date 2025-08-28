@@ -1,20 +1,20 @@
 # 🍦 Heladería Asíncrona
 
-Este proyecto es una miniaplicación de consola desarrollada en TypeScript que simula la gestión de pedidos en una heladería. [cite\_start]El objetivo principal es demostrar el uso de características modernas de JavaScript/TypeScript, incluyendo la programación asíncrona con Promesas y `async/await`. [cite: 3, 6]
+Este proyecto es una miniaplicación de consola desarrollada en TypeScript que simula la gestión de pedidos en una heladería. El objetivo principal es demostrar el uso de características modernas de JavaScript/TypeScript, incluyendo la programación asíncrona con Promesas y `async/await`.
 
 ## ✨ Características
 
-  * [cite\_start]**Creación de Pedidos**: Permite crear pedidos de helados especificando sabor, tamaño, toppings y notas adicionales. [cite: 30, 31]
-  * [cite\_start]**Cálculo de Precios**: Calcula automáticamente el precio final del pedido, incluyendo un IVA configurable y el costo adicional de los toppings. [cite: 27, 29]
-  * [cite\_start]**Preparación Asíncrona**: Simula el tiempo de preparación de un pedido de forma asíncrona, actualizando su estado de `pendiente` a `preparando` y finalmente a `listo`. [cite: 33, 35]
-  * [cite\_start]**Listado y Filtrado**: Ofrece la capacidad de listar todos los pedidos o filtrarlos por su estado (ej. 'pendiente') o por un texto de búsqueda. [cite: 37, 39, 40]
-  * [cite\_start]**Manejo de Promesas**: Demuestra el uso de `async/await` y `.then()/.catch()` para manejar operaciones asíncronas. [cite: 49, 50]
+  * **Creación de Pedidos**: Permite crear pedidos de helados especificando sabor, tamaño, toppings y notas adicionales.
+  * **Cálculo de Precios**: Calcula automáticamente el precio final del pedido, incluyendo un IVA configurable y el costo adicional de los toppings.
+  * **Preparación Asíncrona**: Simula el tiempo de preparación de un pedido de forma asíncrona, actualizando su estado de `pendiente` a `preparando` y finalmente a `listo`.
+  * **Listado y Filtrado**: Ofrece la capacidad de listar todos los pedidos o filtrarlos por su estado (ej. 'pendiente') o por un texto de búsqueda.
+  * **Manejo de Promesas**: Demuestra el uso de `async/await` y `.then()/.catch()` para manejar operaciones asíncronas.
 
 ## 🛠️ Tecnologías Utilizadas
 
   * **TypeScript**: Para un código JavaScript tipado, robusto y escalable.
   * **Node.js**: Como entorno de ejecución.
-  * [cite\_start]**ts-node**: Para ejecutar el código TypeScript directamente sin una compilación manual previa. [cite: 77]
+  * **ts-node**: Para ejecutar el código TypeScript directamente sin una compilación manual previa.
 
 ## 🚀 Instalación y Uso
 
@@ -31,20 +31,20 @@ cd heladeria-async
 ```
 
 **3. Instala las dependencias**
-[cite\_start]Este proyecto utiliza `typescript` y `ts-node` como dependencias de desarrollo. [cite: 77]
+Este proyecto utiliza `typescript` y `ts-node` como dependencias de desarrollo.
 
 ```bash
 npm install
 ```
 
 **4. Ejecuta el script**
-El archivo `main.ts` contiene la demostración de la funcionalidad. [cite\_start]Para ejecutarlo, usa el siguiente comando: [cite: 52]
+El archivo `main.ts` contiene la demostración de la funcionalidad. Para ejecutarlo, usa el siguiente comando:
 
 ```bash
 npx ts-node main.ts
 ```
 
-[cite\_start]Verás en la consola la salida de la creación, listado y preparación de los pedidos. [cite: 53]
+Verás en la consola la salida de la creación, listado y preparación de los pedidos.
 
 ## 📂 Estructura del Proyecto
 
